@@ -20,7 +20,7 @@ int init(int node, int b, int e)
 
 }
 int query(int node, int b, int e, int i, int j)
-{
+{https://github.com/ahmedshuvo969/BLTK-Bangla-Language-ToolKit/blob/master/lightOj%201082
     if (i > e || j < b) return INT_MAX;
     if (b >= i && e <= j) return tree[node];
     int Left = node * 2;
