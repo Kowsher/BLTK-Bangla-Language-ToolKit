@@ -1,65 +1,17 @@
-#include<bits/stdc++.h>
-using namespace std;
-#define mx 100001
+1. Text Classification and Categorisation 
 
-int arr[mx];
-int tree[mx * 3];
-int init(int node, int b, int e)
-{
-    int x,y;
-    if (b == e) {
-        tree[node] = arr[b];
-        return tree[node];
-    }
-    int Left = node * 2;
-    int Right = node * 2 + 1;
-    int mid = (b + e) / 2;
-    x=init(Left, b, mid);
-    y=init(Right, mid + 1, e);
-    return tree[node]=min(x,y);
+2. Named Entity Recognition 
 
-}
-int query(int node, int b, int e, int i, int j)
-{https://github.com/ahmedshuvo969/BLTK-Bangla-Language-ToolKit/blob/master/lightOj%201082
-    if (i > e || j < b) return INT_MAX;
-    if (b >= i && e <= j) return tree[node];
-    int Left = node * 2;
-    int Right = node * 2 + 1;
-    int mid = (b + e) / 2;
-    int p1 = query(Left, b, mid, i, j);
-    int p2 = query(Right, mid + 1, e, i, j);
-    return min(p1,p2);
-}
+3. Chatbot or intelligence bot 
 
-int main()
-{
-	int t,n,qs,x,y;
+4. Part-of-Speech Tagging
 
-	scanf("%d", &t);
+ 5. Semantic Parsing and Question Answering 
 
-	for (int cs = 1; cs <= t; cs++) {
+6. Paraphrase Detection 
 
-		scanf("%d", &n);
-		scanf("%d", &qs);
+7. Language Generation and Multi-document Summarization 
 
-		for (int i = 1; i <= n; i++) {
-			scanf("%d", &arr[i]);
-		}
+8. Spell Checking 
 
-		init(1,1,n);
-
-		printf("Case %d:\n", cs);
-
-		for(int i = 0; i < qs; i++) {
-			scanf("%d", &x);
-			scanf("%d", &y);
-
-			printf("%d\n", query(1,1,n,x,y));
-		}
-
-
-	}
-
-
-}
-
+9. Mathematical and statistical operation : SVD, NMF, LDA, PCA on bangla language
