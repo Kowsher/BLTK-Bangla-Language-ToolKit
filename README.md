@@ -21,4 +21,4 @@ he Bangla Language Toolkit, or more commonly BLTK, is a suite of Artificial Inte
 
 9. Mathematical and statistical operation : SVD, NMF, LDA, PCA on bangla language 
 
-##Still private mode, very soon it will be open for all. If you interest to use it, feel free to email me
+## Still private mode, very soon it will be open for all. If you interest to use it, feel free to email me
